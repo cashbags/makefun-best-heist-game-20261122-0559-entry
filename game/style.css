@@ -1,0 +1,43 @@
+/* MIDNIGHT VAULT — page chrome. The game itself is drawn on the canvas;
+   this file only centres it on a dark page and hides the fallback note
+   once the game has started drawing. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0d12;
+  color: #e8ecf5;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  display: block;
+  background: #14100c;
+  border: 2px solid #2c313d;
+  border-radius: 8px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+#fallback {
+  margin: 0;
+  font-size: 13px;
+  color: #9aa4b2;
+  text-align: center;
+}
